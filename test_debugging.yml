@@ -1,6 +1,6 @@
 ---
 - name: Test debugging
-  hosts: all
+  hosts: "{{ run_environment }}"
   gather_facts: false
   become: false
 
