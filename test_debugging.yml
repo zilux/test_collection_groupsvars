@@ -10,5 +10,4 @@
       ansible.builtin.include_role:
         name: zilux.groupvars.debugging
       vars:
-         motd: Jus a message
-
+         debugging_motd: Jus a message
