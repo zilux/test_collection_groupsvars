@@ -1,2 +1,6 @@
 [testing]
 node1.qrom.nl
+node2.qrom.nl
+
+[qa]
+kihon.qrom.nl
