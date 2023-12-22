@@ -8,6 +8,6 @@
 
     - name: Run role in collection
       ansible.builtin.include_role:
-        name: zilux.groupvars.debugging
+        name: zilux.groupsvars.debugging
       vars:
-         debugging_motd: Jus a message
+        debugging_motd: Just a message
