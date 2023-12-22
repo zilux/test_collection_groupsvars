@@ -1,0 +1,14 @@
+---
+- name: Test debugging
+  hosts: localhost
+  gather_facts: false
+  become: false
+
+  tasks:
+
+    - name: Run role in collection
+      ansible.builtin.include_role:
+        name: zilux.groupvars.debugging
+      vars:
+         motd: Jus a message
+
