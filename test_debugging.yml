@@ -1,6 +1,6 @@
 ---
 - name: Test debugging
-  hosts: "{{ run_environment }}"
+  hosts: "{{ run_environment | default('qa') }}"
   gather_facts: false
   become: false
 
@@ -11,3 +11,5 @@
         name: zilux.groupsvars.debugging
       # vars:
       #  debugging_motd: Just a message
+
+      
